@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LionBlock : 뛰어난 광고 차단 필터</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+<header class="masthead text-center text-white" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" style="padding:50px 0">
+                <h1 style="text-shadow: 2px 2px 2px #777777;">LionBlock</h1>
+                <h2 style="text-shadow: 2px 2px 2px #777777;">오픈 소스 광고 차단 필터</h2>
+                <hr style="border-color: white;">
+                <p style="color:white; text-shadow: 2px 2px 2px #777777;">더 깨끗한 웹환경을 위해 함께 만드는 광고 차단 서비스</p>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">LionBlock</a></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"> </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/intro">소개 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/edu">광고 차단 규칙 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/rpt">광고 제보하기 </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/history">역사 </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<%= yield %>
+
+<footer class="footer-distributed" >
+    <p style="margin-bottom:0">LionBlock
+      Republic of Korea | 이메일 : gksalswl1229@naver.com<br>
+      TEL 000-000-0000 Ι FAX 000-000-0000 Ι Email : webmaster@likelion.org<br>
+      COPYRIGHT &copy; 2018 BY LionBlock ALL RIGHTS RESERVED.</p>
+</footer>
+</body>
+</html>

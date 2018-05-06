@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="row" style="margin-top:50px">
+        <div class="col-sm-10 offset-sm-1">
+            <div style="text-align:center;"><h1>LIONBLOCK</h1></div>
+            <img src="/assets/intro_0_lionblock.png" style="width:100%">      
+            <p>광고 차단은 인터넷을 사용할 때, 사용자 경험을 해치는 광고와 무절제한 리소스의 낭비를 차단합니다.</p>
+            <p>각 브라우저에 맞는 확장기능을 자유롭게 설치한 후 다음 주소를 직접 입력하여 구독하시거나, 버튼을 눌러 구독하세요.</p>
+            <!--네비바-->
+            <nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Chrome</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Firefox</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Edge</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><ol>
+              <li><a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=ko">uBlock Origin</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg?hl=ko">AdGuard</a></li>
+              <li><a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=ko">Adblock Plus</a></li></ol>
+            </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><ol><li><a href="https://addons.mozilla.org/ko/firefox/addon/ublock-origin/">uBlock Origin</a></li>
+              <li><a href="https://addons.mozilla.org/ko/firefox/addon/adguard-adblocker/">AdGuard</a></li>
+              <li><a href="https://addons.mozilla.org/ko/firefox/addon/adblock-plus/">Adblock Plus</a></li></ol></div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><ol><li><a href="https://www.microsoft.com/en-us/store/p/ublock-origin/9nblggh444l4">uBlock Origin</a></li>
+              <li><a href="https://www.microsoft.com/en-us/store/p/adguard-adblocker/9mz607gwkbs7">AdGuard</a></li>
+              <li><a href="https://www.microsoft.com/en-us/store/p/adblock-plus/9nblggh4r9nz">Adblock Plus</a></li></ol></div>
+</div>
+            
+            <pre>https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt</pre>
+            <a class="btn btn-outline-success" href="abp:subscribe?location=https://raw.githubusercontent.com/likelion-adblock/filter/master/filter.txt&amp;title=LionBlock">바로 구독하기</a>
+            <br><br>
+            <img src="/assets/intro_1_how.PNG" style="width:100%">
+            <p>광고 차단 필터는 프로그램과 별개로 작동합니다. 광고 차단 프로그램은 규칙을 실행하기만 하며, 규칙 자체는 필터에서 시작됩니다.</p>
+            <p>윈도우os와 게임이 별개로 작동하며, 윈도우os는 그저 게임을 실행시키기만 하는 것처럼 말이죠.</p>
+            <p>이러한 필터는 각 사이트, 각 광고마다 일일이 입력해주어야 하므로, 관리하기가 매우 까다롭습니다.</p>
+            <img src="/assets/intro_2_why2.png" style="width:100%">
+            <p>광고 차단 필터는 관리하기가 매우 까다롭고, 기준을 정하는 것도 쉽지 않습니다.</p>
+            <p>자체 프로모션이나 이벤트, 공익을 위한 광고 등등... 때문에 대부분은 외부 광고를 위주로 차단하게 됩니다.</p>
+            <p>반면 LionBlock 필터는 모든 광고, 프로모션을 완전히 차단합니다. 사용자의 개인 정보를 추적하는 스크립트, 멀웨어도 함께 차단합니다.</p>
+            <br>
+            <img src="/assets/intro_3_why.PNG" style="width:100%">
+            
+            <br><br><br>
+            
+            <div style="text-align:center;">
+            <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    차단 결과 미리 보기
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <img src="/assets/adblock_dc.png" style="width:100%"><br>
+    <img src="/assets/adblock_naver.png" style="width:100%"><br>
+    <img src="/assets/adblock_news.png" style="width:100%"><br>
+  </div>
+</div></div>
+
+            
+            <br>
+        </div>
+    </div>
+</div>
+
+
+<!--경계-->
+<!--
+<div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.name %></td>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+</div>
+</html>
+-->
+

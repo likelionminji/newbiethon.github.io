@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row" style="margin-top:50px">
+        <div class="col-sm-10 offset-sm-1">
+            <p>당신의 참여로 더 깨끗한 광고 차단 서비스를 만들 수 있습니다!</p>
+            <p>광고 차단에 대해 몰라도, 프로그램을 설치하지 않아도 쉽게 참여할 수 있습니다.</p>
+            <br>
+            <p><strong>광고 차단을 원하는 사이트의 주소와 광고의 위치</strong>를 보내주세요!</p>
+            <p>사용하시는 인터넷 브라우저와 PC/모바일 여부를 함께 입력해주시면 더 원활한 광고 차단에 도움이 됩니다.</p>
+            <p>보내주신 제보는 개발팀의 검토 후에 가장 최적화된 형태로 광고 차단 프로그램에 반영될 것입니다.</p>
+            <p>진행 상황 또는 결과를 알고 싶으시다면 회신가능한 이메일 주소를 남겨주세요.</p>
+            <br>
+            <p>함께 더 깨끗한 인터넷 환경을 만들어요 :)</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding:50px 0; border:2px solid green">
+        <div class="col-sm-10 offset-sm-1">
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                <div class="form-group row" margin:10px 10px 10px >
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">제목</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="title1" class="form-control" id="inputEmail3" placeholder="제목을 입력해주세요.">
+                    </div>
+                </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">사이트 주소</label>
+                <div class="col-sm-10">
+                    <input type="text" name="site1" class="form-control" id="inputPassword3" placeholder="전체 사이트 안에서도 광고가 있는 페이지의 정확한 주소를 입력해주세요. (예시 : http://www.nojamsite.com/tryit.asp?file/3455245)">
+                </div>
+            </div>
+            <div class="form-group row" margin:10px 10px 10px >
+                <label for="inputEmail3" class="col-sm-2 col-form-label">광고 위치</label>
+                <div class="col-sm-10">
+                    <input type="text" name="locate1" class="form-control" id="inputEmail3" placeholder="제거되기를 원하는 광고의 정확한 위치를 입력해주세요. (예시 : 유머 게시판 아래 왼쪽에 있는 광고를 없애고 싶습니다.)">
+                </div>
+            </div>
+            <div class="form-group row" margin:10px 10px 10px >
+                <label for="inputEmail3" class="col-sm-2 col-form-label">인터넷 브라우저</label>
+                <div class="col-sm-10">
+                    <input type="text" name="brower1" class="form-control" id="inputEmail3" placeholder="사용하시는 인터넷 브라우저를 입력해주세요.">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0"></legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" name="pc1" for="gridRadios1">
+                                PC
+                            </label>
+                </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" name="mobile1" for="gridRadios2">
+                                모바일
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row" style="margin:10px 10px 10px">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">이메일 주소</label>
+                    <div class="col-sm-10">
+                        <input type="email" name="email1" class="form-control" id="inputEmail3" placeholder="회신가능한 이메일 주소를 입력해수세요">
+                    </div>
+                </div>
+                <input type="file" name="file1">
+                <p><font color:gray>광고의 위치 등 첨부할 사진 파일이 있으면 함께 보내주세요.</font></p>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">참여</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>
+</div>
